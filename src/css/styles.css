@@ -656,7 +656,7 @@ address .office-hours {
     -webkit-transition: background-color 0.2s ease;
     transition: background-color 0.2s ease;
   }
-  .navigation-list .nav-link .current-link {
+  .navigation-list .nav-link.current-link {
     color: #fff;
     background-color: #a7c353;
   }
@@ -752,6 +752,9 @@ address .office-hours {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+  .logo-wrap {
+    margin-right: 5px;
+  }
   .hero .hero-text-wrapper-mobile {
     position: absolute;
     margin-left: auto;

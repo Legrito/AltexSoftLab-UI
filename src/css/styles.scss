@@ -626,7 +626,7 @@ address {
       color: black;
       transition: background-color 0.2s ease;
 
-      .current-link {
+      &.current-link {
         color: #fff;
         background-color: $accent-color;
       }
@@ -728,6 +728,10 @@ address {
 }
 
 @media screen and(min-width: 768px) and(max-width: 1023px) {
+
+  .logo-wrap {
+    margin-right: 5px;
+  }
 
   .hero {
     .hero-text-wrapper-mobile {
