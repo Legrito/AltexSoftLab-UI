@@ -60,14 +60,6 @@ ul {
   padding: 0;
 }
 
-// .content-wrapper {
-//   margin: 0;
-//   margin-right: auto;
-//   margin-left: auto;
-//   padding: 0;
-//   max-width: 1200px;
-//   background-color: #313131;
-// }
 
 blockquote {
   padding: 0;
@@ -96,8 +88,12 @@ address {
   text-align: right;
   color: $accent-color;
 
-  &:hover {
+  &:hover, &:focus {
     text-decoration: underline;
+  }
+
+  &:focus {
+    outline: 1px solid $accent-color;
   }
 }
 
@@ -331,6 +327,7 @@ footer {
 
   .footer-title {
     margin: 0;
+    margin-bottom: 15px;
     padding-bottom: 15px;
     font-size: 16px;
     line-height: 1.2;
@@ -340,8 +337,13 @@ footer {
   }
   
   .blog {
-    .footer-link:hover {
+    .footer-link:hover,
+    .footer-link:focus {
       text-decoration: underline;
+    }
+
+    .footer-link:focus {
+      outline: 1px solid $accent-color;
     }
   }
 }
@@ -375,8 +377,13 @@ address {
   text-align: right;
   color: $accent-color;
 
-  &:hover {
+  &:hover,
+  &:focus {
     text-decoration: underline;
+  }
+
+  &:focus {
+    outline: 1px solid $accent-color;
   }
 
 }
@@ -402,6 +409,11 @@ address {
         text-decoration: underline;
       }
 
+    }
+
+    .social-link:focus {
+      background-color: $accent-color;
+      outline: none;
     }
 
     .social-link {
@@ -481,9 +493,14 @@ address {
     font-size: 13px;
     color: #989898;
     background-color: #383838;
-    border: none;
+    border: 1px solid #383838;
     border-radius: 6px;
     outline: none;
+
+    &:hover,
+    &:focus {
+      border: 1px solid $accent-color
+    }
   }
 
   input::placeholder {
@@ -500,10 +517,15 @@ address {
     font-size: 13px;
     color: #989898;
     background-color: #383838;
-    border: none;
+    border: 1px solid #383838;
     border-radius: 6px;
     outline: none;
     resize: none;
+
+    &:hover,
+    &:focus {
+      border: 1px solid $accent-color
+    }
 
     &::placeholder {
       font-family: "Georgia";
@@ -528,7 +550,8 @@ address {
     background-color: $accent-color;
     cursor: pointer;
 
-    &:hover {
+    &:hover,
+    &:focus {
       color:#fff;
     }
   }
@@ -634,6 +657,12 @@ address {
       &:hover {
         color: #fff;
         background-color: $accent-color;
+      }
+
+      &:focus {
+        color: #fff;
+        background-color: $accent-color;
+        outline: none;
       }
 
       &:active {

@@ -86,8 +86,12 @@ address {
   color: #a7c353;
 }
 
-.section-read-more-link:hover {
+.section-read-more-link:hover, .section-read-more-link:focus {
   text-decoration: underline;
+}
+
+.section-read-more-link:focus {
+  outline: 1px solid #a7c353;
 }
 
 header {
@@ -330,6 +334,7 @@ footer .container {
 
 footer .footer-title {
   margin: 0;
+  margin-bottom: 15px;
   padding-bottom: 15px;
   font-size: 16px;
   line-height: 1.2;
@@ -338,8 +343,13 @@ footer .footer-title {
   border-bottom: 1px solid #3a3a3a;
 }
 
-footer .blog .footer-link:hover {
+footer .blog .footer-link:hover,
+footer .blog .footer-link:focus {
   text-decoration: underline;
+}
+
+footer .blog .footer-link:focus {
+  outline: 1px solid #a7c353;
 }
 
 .copany-contacts {
@@ -373,8 +383,12 @@ address .office-hours {
   color: #a7c353;
 }
 
-.footer-link:hover {
+.footer-link:hover, .footer-link:focus {
   text-decoration: underline;
+}
+
+.footer-link:focus {
+  outline: 1px solid #a7c353;
 }
 
 .social-links-wrap {
@@ -399,6 +413,11 @@ address .office-hours {
 
 .social-list .social-item:hover .footer-link {
   text-decoration: underline;
+}
+
+.social-list .social-item .social-link:focus {
+  background-color: #a7c353;
+  outline: none;
 }
 
 .social-list .social-item .social-link {
@@ -481,9 +500,13 @@ address .office-hours {
   font-size: 13px;
   color: #989898;
   background-color: #383838;
-  border: none;
+  border: 1px solid #383838;
   border-radius: 6px;
   outline: none;
+}
+
+.contact-form input:hover, .contact-form input:focus {
+  border: 1px solid #a7c353;
 }
 
 .contact-form input::-webkit-input-placeholder {
@@ -515,10 +538,14 @@ address .office-hours {
   font-size: 13px;
   color: #989898;
   background-color: #383838;
-  border: none;
+  border: 1px solid #383838;
   border-radius: 6px;
   outline: none;
   resize: none;
+}
+
+.contact-form textarea:hover, .contact-form textarea:focus {
+  border: 1px solid #a7c353;
 }
 
 .contact-form textarea::-webkit-input-placeholder {
@@ -564,7 +591,7 @@ address .office-hours {
   cursor: pointer;
 }
 
-.contact-form .btn:hover {
+.contact-form .btn:hover, .contact-form .btn:focus {
   color: #fff;
 }
 
@@ -663,6 +690,11 @@ address .office-hours {
   .navigation-list .nav-link:hover {
     color: #fff;
     background-color: #a7c353;
+  }
+  .navigation-list .nav-link:focus {
+    color: #fff;
+    background-color: #a7c353;
+    outline: none;
   }
   .navigation-list .nav-link:active {
     color: black;

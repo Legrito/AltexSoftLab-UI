@@ -53,7 +53,7 @@
 
         // функция, выполняющая смену слайда в указанном направлении
         var _move = function (direction) {
-          var nextItem, currentIndicator = _indicatorIndex;;
+          var nextItem, currentIndicator = _indicatorIndex;
           if (direction === 'next') {
             _currentPosition++;
             if (_currentPosition > position.getItemPosition('max')) {
@@ -166,6 +166,15 @@
               _startAutoplay();
             }
           });
+          window.addEventListener('keydown', function (e) {
+            if(e.code === 'ArrowRight') {
+              _move('next');
+            } else if(e.code === 'ArrowLeft') {
+              _move('prev');
+            } else {
+              return;
+            }
+          })
           document.addEventListener('visibilitychange', function () {
             if (document.visibilityState === "hidden") {
               _stopAutoplay();
@@ -217,4 +226,5 @@
       isAutoplay: false
     });
 
+    
     console.log('ima working');
